@@ -759,7 +759,7 @@ struct rte_mbuf {
 	/** Timesync flags for use with IEEE1588. */
 	uint16_t timesync;
   uint64_t udata64;
-	uint32_t dynfield1[9]; /**< Reserved for dynamic fields. */
+	uint32_t dynfield1[7]; /**< Reserved for dynamic fields. */
 } __rte_cache_aligned;
 
 /**
