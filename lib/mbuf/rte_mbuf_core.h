@@ -16,7 +16,8 @@
  * New fields and flags should fit in the "dynamic space".
  */
 
-#include <cstdint>
+//#include <cstdint>
+#include "drivers/net/vmxnet3/base/vmxnet3_osdep.h"
 #include <stdint.h>
 
 #include <rte_compat.h>
@@ -758,8 +759,8 @@ struct rte_mbuf {
 
 	/** Timesync flags for use with IEEE1588. */
 	uint16_t timesync;
+  uint32_t dynfield1[7]; /**< Reserved for dynamic fields. */
   uint64_t udata64;
-	uint32_t dynfield1[7]; /**< Reserved for dynamic fields. */
 } __rte_cache_aligned;
 
 /**

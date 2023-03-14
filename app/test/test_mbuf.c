@@ -2784,9 +2784,10 @@ test_mbuf(void)
 	struct rte_mempool *pktmbuf_pool = NULL;
 	struct rte_mempool *pktmbuf_pool2 = NULL;
 
-
+  
 	RTE_BUILD_BUG_ON(sizeof(struct rte_mbuf) != RTE_CACHE_LINE_MIN_SIZE * 2);
-
+  
+  //printf("rte_mbuf_size : %d\n",sizeof(struct rte_mbuf));
 	/* create pktmbuf pool if it does not exist */
 	pktmbuf_pool = rte_pktmbuf_pool_create("test_pktmbuf_pool",
 			NB_MBUF, MEMPOOL_CACHE_SIZE, 0, MBUF_DATA_SIZE,

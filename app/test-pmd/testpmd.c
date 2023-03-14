@@ -4096,6 +4096,7 @@ signal_handler(int signum)
 int
 main(int argc, char** argv)
 {
+  printf("rte_mbuf_size %ld \n",sizeof(struct rte_mbuf));
 	int diag;
 	portid_t port_id;
 	uint16_t count;
