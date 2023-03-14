@@ -11,6 +11,7 @@
 #include <rte_flow.h>
 #include <rte_time.h>
 #include <rte_pci.h>
+#include <ethdev_driver.h>
 
 #define E1000_INTEL_VENDOR_ID 0x8086
 
