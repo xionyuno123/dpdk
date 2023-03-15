@@ -6,6 +6,7 @@
 #define _VMXNET3_OSDEP_H
 
 #include <stdbool.h>
+#include <stdint.h>
 
 typedef uint64_t	uint64;
 typedef uint32_t	uint32;
